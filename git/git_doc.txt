@@ -1,0 +1,69 @@
+1. git init
+   it will create a folder .git includes some folders and files like below:
+   hooks      
+   info
+   objects
+   refs
+   config
+   description
+   HEAD
+
+2. git add .
+   git commit -m "[commit message]"
+   one line like git commit -am ***
+
+3. git commit --amend
+   
+
+4. git checkout 1.txt 2.txt
+   revoke the uncommit files 
+
+5. git revert head
+   revoke the last commit and generate a new commit message
+
+6. git reset HEAD filename
+
+   git reset --hard HEAD^
+ 
+7. git branch
+   git branch -a
+   git branch branchname  create new branch based on current branch
+   git checkout branchname
+   git checkout -b branchname create new branch based on current branch and switch to new branch
+   git branch branchname b455ffsef
+   git branch branchname tagname
+
+8. git merge branchname
+   git cherry-pick b345fed
+   git merge -squash branchname
+   git rebase -i compress the lastest commit before push
+   git branch -d(-D) branchname
+
+9. git mergetool
+
+10. git tag -a tagname 4effggdf "tag msg" tag for history commit
+    git tag -a tagname -m "tags msg"   tag for current commit
+    git tag
+    git tag -d/-D tagname
+
+11. git log --online --graph
+    gitk branchname
+    git --all
+    gitk filename
+    git branch -v   check the last commit of erevry branch
+
+12. git clone ssh://eyngwei@gerrit.sh.cn.ao.ericsson.se:29418/IPTV/*
+    git pull origin branchname
+    git push origin branchname
+    git push origin HEAD:refs/for/branchname
+    git push origin tagname
+
+
+13. ssh-keygen -t rsa
+    ssh -p 29418 eynwgei@gerrit.sh.cn.ao.ericsson.se
+    git config -l
+
+
+
+
+
