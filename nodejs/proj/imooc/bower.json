@@ -1,0 +1,21 @@
+{
+  "name": "imooc",
+  "version": "0.0.1",
+  "authors": [
+    "david"
+  ],
+  "description": "imooc movie",
+  "main": "app.js",
+  "moduleType": [
+    "amd",
+    "node"
+  ],
+  "keywords": [
+    "imooc",
+    "movie"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}
