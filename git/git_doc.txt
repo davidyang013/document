@@ -47,6 +47,9 @@
     git tag -d/-D tagname
 
 11. git log --online --graph
+    --online shows the information between each commit compressed into the hash value and submit information in a row.
+    --graph  this option will be left in the output interface with a graphical representation based on the text to display the history
+    --all shows the history of all branch
     gitk branchname
     git --all
     gitk filename
@@ -64,6 +67,31 @@
     git config -l
 
 
+14. git blame [file_name]
+    check the every line author, last modified timestamp and commit.
 
+15 git reflog
+    check the info that delete by hard reset, it shows the information of head move, no including the push or merge
 
+16 git add -p file_name
+   commit part of the file_name's update
+   y  cache this part
+   n  no cache
+   e  edit 
+   d exit or enter next file
+   s split this block
 
+17 git rebase -i HEAD~[number_of_commits]
+   merge some times commits to one
+   git rebase -i HEAD~2   
+
+18 git stash
+   git stash list
+   git stash apply #want to recover or not save it 
+   git stash apply stash@{2}
+
+19 git fsck --lost-found
+   check the lost commit
+
+20 git cherry-pick [commit-hash]
+    merge the commit in other branch
