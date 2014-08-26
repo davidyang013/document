@@ -1,0 +1,23 @@
+git remote 
+
+git remote -v
+git remote add [shortname] [url]
+git fetch [remote-name]
+git push origin master
+git remote show [remote-name]
+git remote rename [old] [new]
+git remote rm [remote-name]
+
+
+git tag
+git tag -l "*abc*"        list
+git tag -a V1.4 -m 'my verson 1.4'    annotated
+git show v1.4     show 
+git tag -s v1.5 -m 'my signed 1.5 tag'    signed
+git tag -v [tag-name]     verification
+git push orogin V1.5
+git push origin --tags
+
+
+git push origin branchname
+git push origin HEAD:refs/for/branchname   codereview
