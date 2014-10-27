@@ -1,0 +1,19 @@
+SSH port forwarding or tunneling
+
+
+Local VS Remote
+
+Local
+ssh -L <local port>:<remote host>:<remote port> <SSH hostname>
+1. ssh -L 13389:localhost:3389 eyngwei@150.235.223.70 login to bridge host
+2. open Remote Desktop, 127.0.0.1:13389, login to remote desktop
+
+
+Remote
+ssh -R <local port>:<remote host>:<remote port> <SSH hostname>
+Server -> Client OK
+Client -> Server NOK
+execute cmd like below:
+ssh -R 7001:localhost:389 LdapClientHost
+
+reference:http://www.ibm.com/developerworks/cn/linux/l-cn-sshforward/	
